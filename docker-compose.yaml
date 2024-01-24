@@ -6,3 +6,7 @@ services:
     image: ghcr.io/laendleenergy/proxy:latest
     ports:
       - "80:80"
+networks:
+  redis:
+    name: redis
+    external: true  
