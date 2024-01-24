@@ -8,6 +8,8 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+    networks:
+      - redis
 
 networks:
   redis:
