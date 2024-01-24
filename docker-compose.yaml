@@ -6,6 +6,9 @@ services:
     image: ghcr.io/laendleenergy/proxy:latest
     ports:
       - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+
 networks:
   redis:
     name: redis
